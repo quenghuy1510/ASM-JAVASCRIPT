@@ -156,7 +156,7 @@
         <div class="thanhlogo">
 			<div class="khunglogo">
 				<div class="logo">
-				<a href="giao_dien.html">
+				<a href="index.html">
 					<img src="images/logo1.png">
 				</a>
 				</div>
@@ -181,7 +181,7 @@
 				<nav>
 				<ul>
 					<li class="active ">
-						<a href="giao_dien.html">TRANG CHỦ</a>
+						<a href="index.html">TRANG CHỦ</a>
 					</li>
 					<li >
 						<a href="#">IPHONE 5</a>
@@ -415,8 +415,8 @@
                     nodeHienThiLoiThoiGianNhanHang.innerHTML = "Vui lòng nhập thời gian nhận hàng trong khoảng 8-18h !";
                     hopLe = false;
                 }
-                if (email == null || email.length <=0 ) {
-                    nodeHienThiLoiEmail.innerHTML = 'Email không được để trống !';
+                if (email == null || email.length <=0 || !email.match("^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$")) {
+                    nodeHienThiLoiEmail.innerHTML = 'Email không được để trống và phải đúng chính quy!';
                     hopLe = false;
                 }
                 return hopLe;
