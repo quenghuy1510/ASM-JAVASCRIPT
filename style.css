@@ -94,6 +94,9 @@
         height: 40px;
         margin: 0 auto;
     }
+    .loadsp{
+        float: right;
+    }
     .khunggiohang{
         width: 269px;
         height: 40px;
@@ -202,6 +205,9 @@
         height: 40px;
         background-color: black;
         font-size: 16px;
+    }
+    header{
+        margin-bottom: 20px;
     }
     .khungmenu1{
         width: 1200px;
@@ -435,7 +441,7 @@
 	background-color: white;
     border: 1px solid #111111;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .thanhcamket a{
     line-height: 61px;

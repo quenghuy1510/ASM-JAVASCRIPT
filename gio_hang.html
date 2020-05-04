@@ -202,13 +202,55 @@
 						<a href="#">IPHONE 11 PROMAX</a>
 					</li>
 					<li>
-						<a href="#">HƯỚNG DẪN MUA HÀNG</a>
+						<a href="tao_nhanhsp.html" target="_blank">UPLOAD SẢN PHẨM</a>
 					</li>
 				</ul>
 			</nav>
 			</div>
         
     </header>
+    <div class="thanhcamket">
+        <div class="giaohangtoanquoc">
+            <div class="khung1">
+                <img src="images/maybay1.png">
+            </div>
+            <ul>
+                <li><a href="#">GIAO HÀNG TOÀN QUỐC</a></li>
+            </ul>
+        </div>
+        <div class="hotro">
+            <div class="khung1">
+                <img src="images/dienthoai.png">
+            </div>
+            <ul>
+                <li><a href="#">HỖ TRỢ 24/7</a></li>
+            </ul>
+        </div>
+        <div class="doisize">
+            <div class="khung1">
+                <img src="images/cong.png">
+            </div>
+            <ul>
+                <li><a href="#">ĐỔI LẠI MIỄN PHĨ</a></li>
+            </ul>
+        </div>
+        <div class="uudai">
+            <div class="khung1">
+                <img src="images/khungtich.png">
+            </div>
+            <ul>
+                <li><a href="#">NHIỀU ƯU ĐÃI</a></li>
+            </ul>
+        </div>
+        <div class="thanhtoan">
+            <div class="khung1">
+                <img src="images/tich.png">
+            </div>
+            <ul>
+                <li><a href="#">THANH TOÁN GỌN LẸ</a></li>
+            </ul>
+        </div>
+    </div>
     <div  id="gio-hang">
         <!--danh sách item giỏ hàng-->
         <h1 class="tieuDe">Danh Sách Sản Phẩm</h1>
@@ -229,23 +271,23 @@
     <div class="form">
         <p class="thongTin">Mua Hàng</p>
         <label for="hoTen">Họ và tên</label>
-        <input type="text" id="hoTen">
+        <input type="text" id="hoTen" placeholder="Vui lòng nhập họ tên">
         <label id="hienThiLoiHoTen" for="hoTen" class="error"></label>
 
         <label for="soDienThoai">Số điện thoại</label>
-        <input type="number" id="soDienThoai">
+        <input type="number" id="soDienThoai" placeholder="Vui lòng nhập số điện thoại">
         <label id="hienThiLoiSoDienThoai" for="soDienThoai" class="error"></label>
 
         <label for="email">Email</label>
-        <input type="text" id="email">
+        <input type="text" id="email" placeholder="Vui lòng nhập email">
         <label id="hienThiLoiEmail" for="email" class="error"></label>
 
         <label for="ngaySinh">Ngày Sinh</label>
-        <input type="text" id="ngaySinh">
+        <input type="date" id="ngaySinh">
         <label id="hienThiLoiNgaySinh" for="ngaySinh" class="error"></label>
 
         <label for="thoiGianNhanHang">Thời gian nhận hàng trong 8-18h</label>
-        <input type="number" id="thoiGianNhanHang">
+        <input type="number" id="thoiGianNhanHang" placeholder="Vui lòng nhập thời gian nhận hàng 8-18h">
         <label id="hienThiLoiThoiGianNhanHang" for="thoiGianNhanHang" class="error"></label>
 
         <button  onclick="onClickMuaHang()" class="btn">Mua Hàng</button>
@@ -361,8 +403,8 @@
                     nodeHienThiLoiHoTen.innerHTML = 'Họ tên không được để trống !';
                     hopLe = false;
                 }
-                if (soDienThoai == null || soDienThoai.length <=0 || soDienThoai.length >10){
-                    nodeHienThiLoiSoDienThoai.innerHTML = "Số điện thoại không được để trống và không quá 10 số !";
+                if (soDienThoai == null || soDienThoai.length >10 || soDienThoai.length <10){
+                    nodeHienThiLoiSoDienThoai.innerHTML = "Số điện thoại không được để trống và phải đủ 10 số !";
                     hopLe = false;
                 }
                 if (ngaySinh == null || ngaySinh.length <=0 ){
