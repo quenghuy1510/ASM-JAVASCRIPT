@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học về cách định danh cho 1 đối tượng</title>
+</head>
+<body>
+    <!-- Định danh dùng để xách định 1 đối tượng là duy nhất
+    1. trong danh sách tất cả các đối tượng, thì định danh của đối tượng
+    không trùng với đối tượng khác
+    2.định danh không thay đổi-->
+    <!--mình đang có đối tượng sanPham-->
+    <!--1. tạo thêm thuộc tính dể định danh cho đối tượng
+    2. xây dựng hàm để tạo ra mã định danh (duy nhất)-->
+
+    <!-- chuẩn UUID -> có thư viện để sinh ra -->
+
+    <script>
+        for(var i =0; i<100; i++){
+            console.log(taoId());
+        }
+        
+        /*tạo ra một ID duy nhất*/
+        function taoId(){
+
+            /*lấy thời gian hiện tại theo milisecond hiện tại - 0:0:0 1/1/1997 -> milisecond*/
+            var thoiGianHienTai = new Date().getTime();
+            var id = Math.random().toString().substr(2,10) +'_' + String(thoiGianHienTai);
+
+            return id;
+        }
+    </script>
+</body>
+</html>

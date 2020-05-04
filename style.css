@@ -1,0 +1,495 @@
+    body {
+        margin: 0px;
+        font-family: tahoma;
+        /*font khong chân*/
+        font-size: 14px;
+        margin: 0px;
+    }
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    input {
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        
+    }
+    img {
+        width: 100%;
+    }
+
+    #hien-thi-san-pham {
+        width: 1200px;
+        
+        margin: auto;
+    }
+
+    .san-pham {
+        width: calc(25% - 40px);
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 10px 20px;
+        ;
+    }
+
+    .phan-tram-giam-gia {
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .ten-san-pham {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .gia-goc {
+        font-size: 12px;
+        color: #666;
+        text-decoration: line-through;
+        margin-right: 5px;
+
+    }
+
+    .khu-vuc {
+        font-size: 14px;
+        color: #666;
+        text-align: right;
+    }
+
+    .gia-ban {
+        color: red;
+    }
+
+    button {
+        background-color: orange;
+        width: 150px;
+        height: 40px;
+        float: right;
+    }
+    .btn-them{
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        margin-top: 20px;
+        opacity: 0.7;
+        color: #fff;
+        background-color: black;
+    }
+    .btn-them:hover{
+        opacity: 1;
+        transform: translateY(-1px);
+    }
+    #thanhtren{
+        width: 100%;
+        height: 40px;
+        background-color: black;
+    }
+    .khung{
+        width: 1200px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .khunggiohang{
+        width: 269px;
+        height: 40px;
+        float: right;
+        font-size: 16px;
+    }
+    .donhang{
+        width: 180px;
+        height: 20px;
+        float: right;
+        margin-top: 10px;
+        opacity: 0.7;
+        padding-left: 18px;
+    }
+    .donhang a{
+        color: white !important;
+        text-decoration: none;
+      
+    }
+    .donhang:hover{
+        opacity: 1;
+        transform: translateY(-1px);
+    }
+    .logogiohang{
+        width: 20px;
+        height: 20px;
+        float: left;
+    }
+    .thanhlogo{
+        width: 100%;
+        height: 110px;
+    }
+    .khunglogo{
+        width: 1200px;
+        height: 110px;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 170px;
+        height: 110px;
+        margin-right: 220px;
+        float: left;
+    }
+    .logo img{
+        width: 60%;
+    }
+    .thanhtimkiem{
+        width: 500px;
+        height: 50px;
+        float: left;
+        margin-top: 30px;
+        padding-left: 10px;
+    }
+    ::placeholder{
+         padding-left: 5px;
+    }
+    .thanhtimkiem input:first-child{
+        width: 370px;
+        height: 47px;
+        background-color: #fff;
+        border: 1px solid #bbb7b7;
+        color: black;
+        padding-left: 20px;
+    }
+    .thanhtimkiem input:last-child{
+        width: 100px;
+        height: 47px;
+        background-color: red;
+        border: none;
+        margin-right: 3px;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .dangnhap{
+        width: 178px;
+        height: 50px;
+        float: right;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    .logonho{
+        width: 50px;
+        height: 50px;
+        float: left;
+    }
+    .dn{
+        width: 128px;
+        height: 50px;
+        float: left;
+        color: #262626;
+        opacity: 0.6;
+    }
+    .dn a{
+        color: #262626 !important;
+        text-decoration: none;
+        opacity: 0.7;
+    }
+    .dn a:hover{
+        opacity: 1;
+        transform: translateY(-1px);
+    }
+    .menutop1{
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        font-size: 16px;
+    }
+    .khungmenu1{
+        width: 1200px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .khungmenu1 li{
+        float: left;
+        padding-left: 22px;
+        padding-right: 20px;
+        line-height: 40px;
+        list-style: none;
+    }
+    .khungmenu1 a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .khungmenu1 li:hover,
+    .khungmenu1 .active{
+        background-image: linear-gradient(#AAAAAA, #999999);
+    }
+    .khungmenu1 a:hover{
+        color: red;
+        transform: translateY(-1px);
+    }
+    .menutop{
+        width: 100%;
+        height: 50px;
+    }
+    .khungmenu{
+        width: 1160px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: black;
+        text-decoration: none;
+
+    }
+    .khungmenu li{
+        float: left;
+        padding-left: 22px;
+        padding-right: 20px;
+        line-height: 40px;
+        font-size: 16px;
+    
+        
+    }
+    #hien-thi-san-pham img:hover{
+        transition: opacity 0.2s ease-in-out;
+        transform: translateY(-6px);
+ 
+    }
+    .nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .nav a:hover{
+        text-decoration: underline;
+    }
+    .nav li{
+        text-decoration: none;
+        color: #fff;
+       
+    }
+    .sub-menu li{
+        width: 100%;
+        font-size: 13px;
+    }
+    .nav li:hover{
+        background-image: linear-gradient(#AAAAAA, #999999);
+    }
+    .nav>li{
+        float: left;
+        margin-right: 15px;
+
+    }
+    
+    .nav>li>a{
+        text-transform: uppercase;
+        color: red;
+    }
+    
+    .nav li{
+        position: relative;
+        list-style:none;
+    }
+    
+    .nav li a{
+        padding: 10px;
+        line-height: 20px;
+        display: inline-block;
+        color: #fff;
+    }
+    
+    .nav .sub-menu{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        background-color: #000000;
+    
+    }
+    
+    .nav li:hover>.sub-menu{
+        display: block;
+    }
+    
+    .nav>li>.sub-menu{
+        top: 40px;
+        left: 0;
+    }
+    .slider{
+        width: 1600px;
+        height: 400px;
+    }
+    .footer{
+        margin-top: 100px;
+        width: 100%;
+        height: 212px;
+        background-color: #000000;
+        border-bottom: #fff solid 1px;
+    }
+    .khungduoi{
+        width: 1200px;
+        height: 212px;
+        margin: 0 auto;
+        margin-bottom: 2px;
+    }
+    section{
+        margin-bottom: 220px;
+    }
+    .thongtin{
+        width: 1200px;
+        height: 212px;
+    }
+    .footerlogo{
+        width: 280px;
+        height: 212px;
+        float: left;
+        font-size: 10px;
+        color: #fff;
+    }
+    .logoduoi{
+        width: 110px;
+        height: 80px;
+        margin-top: 15px;
+        font-size: 9px;
+        float: left;
+    }
+    .logoduoi img{
+        width: 55%;
+    }
+    .sodienthoai{
+        width: 250px;
+        height: 31px;
+        margin-top: 95px;
+    }
+    .sodienthoai img{
+        width: 60%;
+    }
+
+    .footerthongtin{
+        width: 360px;
+        height: 212px;
+        margin-left: 200px;
+        float: left;
+        margin-top: 10px;
+    }
+    .footerthongtin li{
+        font-size: 12px;
+        list-style: none;
+        color: #fff;
+    }
+    .footerfanpage{
+        width: 250px;
+        height: 212px;
+        float: right;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .taitro{
+        width: 100%;
+        height: 47px;
+        background-color: #000000;
+
+    }
+    .khungtaitro{
+        width: 1200px;
+        height: 47px;
+        margin: 0 auto;
+    }
+    .khunglogotaitro{
+        width: 257px;
+        height: 27px;
+        float: right;
+        background-color: white;
+    }
+    .logotaitro{
+        width: 41px;
+        height: 27px;
+        float: left;
+        margin-right: 2px;
+    }
+    .logotaitro1{
+        width: 41px;
+        height: 27px;
+        float: right;
+    }
+    .chu{
+        width: 273px;
+        height: 18px;
+        float: left;
+    }
+    .footerthongtin  a{
+    text-decoration: none;
+    }
+    .footerthongtin li:hover{
+        color: red;
+
+    }
+    .footerlogo a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+.thanhcamket{
+	width: 1160px;
+	height: 61px;
+	background-color: white;
+    border: 1px solid #111111;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.thanhcamket a{
+    line-height: 61px;
+}
+.giaohangtoanquoc{
+	width: 244px;
+	height: 61px;
+	float: left;
+	line-height: 35px;
+	padding-left: 3px;
+}
+.hotro{
+	width: 244px;
+	height: 61px;
+	float: left;
+	line-height: 35px;
+	padding-left: 3px;
+}
+.doisize{
+	width: 244px;
+	height: 61px;
+	float: left;
+	line-height: 35px;
+	padding-left: 3px;
+}
+.uudai{
+	width: 196px;
+	height: 61px;
+	float: left;
+	line-height: 35px;
+	padding-left: 3px;
+}
+.thanhtoan{
+	width: 215px;
+	height: 61px;
+	float: left;
+	line-height: 35px;
+	padding-left: 3px;
+}
+.khung1{
+	width: 43px;
+	height: 61px;
+	float: left;
+}
+.khung1 img{
+	margin-top: 15px;
+}
+.thanhcamket li{
+	list-style: none;
+}
+.thanhcamket a{
+	text-decoration: none;
+	color: black !important;
+}
+.thanhcamket li:hover{
+	transform: translateY(-2px);
+}

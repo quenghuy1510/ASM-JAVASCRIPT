@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <script src="sanpham.js"></script>
+    <script src="gioHang.js"></script>
+    <script src="hoTro.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--Liên kết file css -->
+	<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <!--Liên kết thư viện .jquery.min-->
+<script src="js/jquery.min.js"></script>
+    <!--Liên kết thư viện bxslider.min.js -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- khỏi tạo slider-->
+<script>
+  $(document).ready(function(){
+$('.slider').bxSlider({
+    mode : 'horizontal',
+    speed : 500,
+    auto : true,
+    pause : 5000
+});
+      });
+</script>
+</head>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="thanhtren">
+			<div class="khung">
+				<div class="khunggiohang">
+					<div class="donhang">
+                        <div class="logogiohang">
+                            <img src="images/giohang.png">
+                        </div>
+						<a href="gio_hang.html  ">
+							Theo dõi đơn hàng
+						</a>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="thanhlogo">
+			<div class="khunglogo">
+				<div class="logo">
+				<a href="giao_dien.html">
+					<img src="images/logo1.png">
+				</a>
+				</div>
+				<div class="thanhtimkiem">
+				<input type="text" placeholder="Nhập sản phẩm cần tìm...">
+				<input type="button" value="Tìm Kiếm">
+				</div>
+				<div class="dangnhap">
+					<div class="logonho">
+						<img src="images/dangnhap.png">
+					</div>
+					<div class="dn">
+						<b><a href="#">Đăng kí</a> <br></b>
+						Hoặc
+						<b><a href="#">Đăng nhập</a></b>
+					</div>
+				</div>
+			</div>	
+        </div>
+        <div class="menutop1">
+			<div class="khungmenu1">
+				<nav>
+				<ul>
+					<li class="active ">
+						<a href="giao_dien.html">TRANG CHỦ</a>
+					</li>
+					<li >
+						<a href="#">IPHONE 5</a>
+					</li>
+					<li>
+						<a href="#">IPHONE 6</a>
+					</li>
+					<li>
+						<a href="#">IPHONE 7</a>
+					</li>
+					<li>
+						<a href="#">IPHONE 8</a>
+                    </li>
+                    <li>
+						<a href="#">IPHONE X SMAX</a>
+                    </li>
+                    <li>
+						<a href="#">IPHONE 11 PROMAX</a>
+					</li>
+					<li>
+						<a href="#">HƯỚNG DẪN MUA HÀNG</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+        
+    </header>
+
+    <!-- Hiển thị nội dung chính của web -->
+    <main>
+
+        <!-- slider -->
+        <section class="slider">
+            <div>
+				<a href="#"><img src="images/1.png"></a>
+			</div>
+			<div>
+				<a href="#"><img src="images/2.png"></a>
+			</div>
+			<div>
+				<a href="#"><img src="images/3.png"></a>
+			</div>
+        </section>
+        <div class="thanhcamket">
+            <div class="giaohangtoanquoc">
+                <div class="khung1">
+                    <img src="images/maybay1.png">
+                </div>
+                <ul>
+                    <li><a href="#">GIAO HÀNG TOÀN QUỐC</a></li>
+                </ul>
+            </div>
+            <div class="hotro">
+                <div class="khung1">
+                    <img src="images/dienthoai.png">
+                </div>
+                <ul>
+                    <li><a href="#">HỖ TRỢ 24/7</a></li>
+                </ul>
+            </div>
+            <div class="doisize">
+                <div class="khung1">
+                    <img src="images/cong.png">
+                </div>
+                <ul>
+                    <li><a href="#">ĐỔI LẠI MIỄN PHĨ</a></li>
+                </ul>
+            </div>
+            <div class="uudai">
+                <div class="khung1">
+                    <img src="images/khungtich.png">
+                </div>
+                <ul>
+                    <li><a href="#">NHIỀU ƯU ĐÃI</a></li>
+                </ul>
+            </div>
+            <div class="thanhtoan">
+                <div class="khung1">
+                    <img src="images/tich.png">
+                </div>
+                <ul>
+                    <li><a href="#">THANH TOÁN GỌN LẸ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menutop">
+			<div class="khungmenu">
+				<ul class="nav">
+                    <li>
+                        <a href="#">Danh Sách Sản Phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Iphone 5</a></li>
+                            <li><a href="#">Iphone 6</a></li>
+                            <li><a href="#">Iphone 7</a></li>
+                            <li><a href="#">Iphone 8</a></li>
+                            <li><a href="#">Iphone X</a></li>
+                            <li><a href="#">Iphone 6</a></li>
+                            <li><a href="#">Iphone 11 PROMAX</a></li>
+                         </ul>
+                    </li>
+                    <li>
+                      <a href="#">Dung Lượng</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Phiên Bản 16G</a></li>
+                         <li><a href="#">Phiên Bản 32G</a></li>
+                         <li><a href="#">Phiên Bản 64G</a></li>
+                         <li><a href="#">Phiên Bản 128G</a></li>
+                         <li><a href="#">Phiên Bản 256G</a></li>
+                         <li><a href="#">Phiên Bản 512G</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                        <a href="#">Màu Sắc</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Đen</a></li>
+                            <li><a href="#">Xám</a></li>
+                            <li><a href="#">Vàng Kim</a></li>
+                            <li><a href="#">Hồng</a></li>
+                            <li><a href="#">Đỏ</a></li>
+                            
+                         </ul>
+                    </li>
+                    <li>
+                        <a href="#">Chất Lượng</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Iphone Mới</a></li>
+                            <li><a href="#">Iphone Cũ</a></li>
+                         </ul>
+                    </li>
+                    <li>
+                        <a href="#">Khu Vực</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sài Gòn</a></li>
+                            <li><a href="#">Hà Nội</a></li>
+                            <li><a href="#">Đà Nẵng</a></li>
+                         </ul>
+                    </li>
+                   
+                 </ul>
+			</div>
+			
+		</div>
+        <div id="hien-thi-san-pham">
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="khungduoi">
+                <div class="thongtin">
+                    <div class="footerlogo">
+                        <div class="logoduoi">
+                            <a href="#"><img src="images/logoduoi.png"></a>
+
+                        </div>
+                        <div class="sodienthoai">
+                            <img src="images/sdt.jpg">
+                        </div>
+                        <a href="#">Iphone Việt Nam – Chuyên cung cấp các sản phẩm Iphone chính hãng.</a>
+                        
+                    </div>
+                    <div class="footerthongtin">
+                        <ul>
+                            <a href="#"><li><b>THÔNG TIN</b></li></a>
+                            <a href="#"><li>Phương thức vận chuyển</li></a>
+                            <a href="#"><li>Điều khoản và điều kiện</li></a>
+                            <a href="#"><li><b>THỜI GIAN HOẠT ĐỘNG</b></li></a>
+                            <a href="#"><li>Địa chỉ: Tầng 3 số 102 Nguyễn Hoàng, Mỹ Đình 2, Nam Từ Liêm, Hà Nội</li></a>
+                            <a href="#"><li>Số điện thoại: 0966342792</li></a>
+                            <a href="#"><li>Zalo: 0966342792</li></a>
+                            <a href="#"><li><b>ĐỊA CHỈ LIÊN HỆ</b></li></a>
+                            <a href="#"><li>Mở cửa: 9:00 AM – Đóng cửa: 23:00 PM</li></a>
+                            <a href="#"><li>Hoạt động tất cả các ngày trong tuần.</li></a>
+                            
+                        </ul>
+                    </div>
+                    <div class="footerfanpage">
+                        <p>THEO DÕI FANPAGE</p>
+
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0&appId=2549652035139546&autoLogAppEvents=1"></script>
+                        <div class="fb-page" data-href="https://www.facebook.com/apple/" data-tabs="timeline" data-width="212" data-height="120" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/apple/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/apple/">Apple</a></blockquote></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="taitro">
+                <div class="khungtaitro">
+                    <div class="khunglogotaitro">
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/visa.png"></a>
+                            
+                        </div>
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/master.png"></a>
+                        </div>
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/paypar.png"></a>
+                        </div>
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/skrill.png"></a>
+                        </div>
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/maestro.png"></a>
+                        </div>
+                        <div class="logotaitro1">
+                            <a href="#"><img src="images/visa1.jpg"></a>
+                        </div>
+
+                </div>
+                <div class="chu">
+                    <a href="#"><img src="images/52.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bước 1: tạo ra đối tượng-->
+    <!-- Bước 2: Chuyển đổi đối tượng thành một đoạn HTML-->
+    <!-- Bước 3: Gắn đoạn HTML vào một node trên giao diện-->
+    <script>
+        /* Bước 1: tạo ra đối tượng */
+
+        /* Bước 2: chuyển đối tượng thành một đoạn HTML */
+        var jsonSP = localStorage.getItem("danhSachSanPham");
+        var dsSanPham = taoRaDoiTuongSanPham().fromJsons(jsonSP);
+        if (dsSanPham == null) {
+            dsSanPham = new Array();
+        }
+        var html = chuyenDanhSachSanPhamSangHTML(dsSanPham);
+        console.log('html của đối tượng là:' + html);
+
+        /* Bước 3: hiển thị đoạn HTML ra giao diện */
+        /* 3.1 truy cập node để hiển thị */
+        var nodeHienThiSanPham = document.getElementById('hien-thi-san-pham');
+        console.log(nodeHienThiSanPham);
+
+        /* 3.2 ghi HTML ra node */
+        nodeHienThiSanPham.innerHTML = html;
+
+        /* yêu cầu: chuyển 1 đối tượng thành một đoạn HTML
+            input: là đối tượng sanPham
+            output: đoạn HTML
+         */
+
+        function onClickThemVaoGioHang(idSanPham) {
+            alert("Đưa thành công sản phẩm có ID: " + idSanPham);
+            /*phân tích cấu tạo lưu trữ*/
+            /*gio hàng là một danh sách các item trong đó chứ thông tin:
+            sản phẩm gì
+            số lượng bao nhiêu
+    
+            -> giỏ hàng - danh sach các đối tượng item giỏ hàng 
+            - đối tượng item giỏ hàng có 2 thuộc tính là:
+            -idSanPham
+            -idSoLuong*/
+            var danhSachItemGioHang = layGioHang();
+            var coTonTaiTrongDanhSachItemGioHang = false;
+            for(var i = 0; i < danhSachItemGioHang.length; i++){
+                var itemGioHangHienTai = danhSachItemGioHang[i];
+
+                if(itemGioHangHienTai.idSanPham == idSanPham){
+                    danhSachItemGioHang[i].soLuong++;
+                    coTonTaiTrongDanhSachItemGioHang = true;
+                }
+            }
+
+            if(coTonTaiTrongDanhSachItemGioHang == false){
+                var iteamGioHang = taoDoiTuongItems(idSanPham,1);
+                danhSachItemGioHang.push(iteamGioHang);
+            }
+                
+            /* b2 phân tích nghiệp vụ chứ năng thêm vào giỏ hàng*/
+            /*1. lấy giỏ hàng cũ từ local storage lên*/
+            // var gioHangCu = layGioHang();
+            // /*2. thêm sản phẩm vào giỏ hàng cũ*/
+            // var gioHangMoi = themSanPhamVaoGioHang(idSanPham, gioHangCu);
+            // /*3. luwu lại giỏ hàng sau khi đã thêm sản phẩ vao local storage*/
+            luuGioHang(danhSachItemGioHang);
+        }
+
+    </script>
+
+</body>
+
+</html>

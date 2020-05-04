@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học về form validation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .form{
+            width: 40%;
+            padding: 1px solid #ddd;
+            box-shadow: 2px 2px 4px #ddd;
+            padding: 30px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .form label,
+        input,
+        button{
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form input,
+        button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form .error {
+            font-size: 12px;
+            color: red;
+            font-style: italic;
+            margin-top: 5px;
+            line-height: 12px;
+            height: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <label for="hoTen">Họ tên</label>
+        <input type="text" id="hoTen">
+        <label id="hienThiLoiHoTen" for="hoTen" class="error"></label>
+
+        <label for="soDienThoai">Số điện thoại</label>
+        <input type="number" id="soDienThoai">
+        <label id="hienThiLoiSoDienThoai" for="soDienThoai" class="error"></label>
+
+        <button  onclick="onClickDangNhap()" class="btn">Đăng nhập</button>
+        <script>
+            /* khi click vào buuton đăng nhập thi thực hiện kiểm tra form
+            1. nếu dữ liệu form kh hợp lệ thì tiếp tụ thực hiện
+            2. nếu dữ liệu trong form kh hợp lệ thì thông báo lỗi*/
+
+            /*hợp lí là gì
+                1. họ tên kh để trống & bằng chữ
+                2. số ddiiejn thoại không được để trống và bằng số
+            */
+
+            /*Những bước thực hiện 
+            1. truy cập node hoTen, soDienThoai để lấy dữ liệu
+            2. kiểm tra xem dữ liệu của trường hoTen & soDienThoai có hợp lệ hay không
+            3. nếu hợp lệ thì tiếp tục, kh hợp lệ thì báo lỗi
+            */
+
+            function onClickDangNhap(){
+                /* b1: kiểm tra hợp lệ*/
+                if (formDangNhapHopLe() == true) {
+                    /*b2 thực hiện đăng nhập*/
+                    console.log('thực hiện đăng nhập')
+                }
+                
+            }
+
+            /*yêu cầu: kiểm tra tinh hợp lệ của form đăng nhập
+                output: hợp lệ thì trả về true
+                        nếu kh hợp lệ thì trả về false*/
+            
+            function formDangNhapHopLe(){
+                //1. truy cập node hoTen, soDienThoai để lấy dữ liệu
+                var hopLe = true;
+                var nodeHoTen = document.getElementById('hoTen');
+                var nodeSoDienThoai = document.getElementById('soDienThoai');
+                var hoTen = nodeHoTen.value;
+                var soDienThoai = nodeSoDienThoai.value;
+                console.log('Họ tên là: '+ hoTen);
+                console.log('Số điện thoại là: '+ soDienThoai);
+
+                var nodeHienThiLoiHoTen  = document.getElementById('hienThiLoiHoTen');
+                var nodeHienThiLoiSoDienThoai = document.getElementById('hienThiLoiSoDienThoai');
+                nodeHienThiLoiHoTen.innerHTML = '';
+                nodeHienThiLoiSoDienThoai.innerHTML = '';
+
+                if (hoTen == null || hoTen.length <=0 ) {
+                    nodeHienThiLoiHoTen.innerHTML = '! Họ tên không được để trống';
+                    hopLe = false;
+                }
+                if (soDienThoai == null || soDienThoai.length <=0 && soDienThoai.length >10){
+                    nodeHienThiLoiSoDienThoai.innerHTML = "! Số điện thoại không được để trống và không quá 10 số";
+                    hopLe = false;
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

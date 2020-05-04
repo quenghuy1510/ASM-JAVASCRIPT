@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo danh sách sản phẩm</title>
+    <script src="hoTro.js"></script>
+    <script src="sanpham.js"></script>
+</head>
+<body>
+    <script>
+        /*b1 lưu trữ danh sách sản phẩm xuống local strorage theo key danhSachSanPham*/
+        /*tạo danh sách sản phẩm*/
+        var danhSachSanPham = new Array();
+        var sanPhamIphone5 = taoRaDoiTuongSanPham("https://cdn.tgdd.vn/Products/Images/42/58039/iPhone-5-16GB-l.jpg"
+        ,"Iphone 5 32 gb",5000000,15,"Hà Nội");
+        var sanPhamIphone6 = taoRaDoiTuongSanPham("https://cdn.tgdd.vn/Products/Images/42/92962/iphone-6-32gb-gold-hh-600x600-600x600-600x600.jpg"
+        ,"Iphone 6 32 gb",6000000,16,"Đà Nẵng");
+        var sanPhamIphone7 = taoRaDoiTuongSanPham("https://bachlongmobile.com/media/catalog/product/cache/2/image/040ec09b1e35df139433887a97daa66f/7/s/7silver_2.jpg"
+        ,"Iphone 7 32 gb",7000000,17,"Hồ Chí Minh");
+        var sanPhamIphone8 = taoRaDoiTuongSanPham("https://cdn.tgdd.vn/Products/Images/42/114110/iphone-8-plus-hh-600x600-400x400.jpg"
+        ,"Iphone 8 32 gb",8000000,18,"Buôn Ma Thuật");
+
+       for(var i =0; i <5; i++){
+            danhSachSanPham.push(sanPhamIphone5);
+            danhSachSanPham.push(sanPhamIphone6);
+            danhSachSanPham.push(sanPhamIphone7);
+            danhSachSanPham.push(sanPhamIphone8);
+       }
+
+        /*chuyển danh sách sang json*/
+        var json = JSON.stringify(danhSachSanPham);
+        console.log(json);
+
+        /*lưu trữ xuống local storage*/
+
+        localStorage.setItem('danhSachSanPham', json);
+
+        /*chuyển load danh sach đối tượng từ local storage lên*/
+        var jsonLayTuLocalStorage = localStorage.getItem('danhSachSanPham');
+        /*b1 lấy json từ local storage lên*/
+        var danhSachSanPhamTuLocalStorage = JSON.parse(jsonLayTuLocalStorage);
+        console.log(danhSachSanPhamTuLocalStorage);
+    </script>
+</body>
+</html>
